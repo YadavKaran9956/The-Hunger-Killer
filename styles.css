@@ -1,59 +1,75 @@
-* {
+/* Reset & Globals */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-    font-family: Comic Neue, sans-serif;
-    font-size: 25px;
+    font-family: 'Comic Neue', sans-serif;
+    font-size: clamp(14px, 1.5vw, 18px);
     text-rendering: optimizeLegibility;
     background-color: #fff;
     color: #555;
+    overflow-x: hidden;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header background */
 header {
     width: 100vw;
-    max-width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Resources/Images/banner.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
-nav {
-
-    /* position: sticky;
-    top: 10px; */
-    .row .logo {
-        width: auto;
-        height: 100px;
-        float: left;
-        border-radius: 100%;
-        margin-top: 35px;
-        margin-left: 40px;
-    }
-
-    .row-links {
-        float: right;
-        margin-top: 70px;
-
-        a {
-            text-decoration: none;
-            margin: 20px 50px;
-            color: #fff;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        a:hover {
-            border-bottom: 3px solid darkorange;
-            color: darkorange;
-            transition-delay: 0.2s;
-            transition-timing-function: ease-in-out;
-        }
-    }
+/* Navbar layout */
+nav .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
 }
 
+.logo {
+    width: auto;
+    height: 100px;
+    border-radius: 100%;
+}
+
+/* Nav links */
+.row-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 35px;
+}
+
+.row-links a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.row-links a:hover {
+    border-bottom: 3px solid darkorange;
+    color: darkorange;
+}
+
+/* Hero Banner */
 .hero-banner {
     color: #fff;
     letter-spacing: 1px;
@@ -61,88 +77,174 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-
-    .btn {
-        color: #fff;
-        border: 3px solid darkorange;
-        border-radius: 30px;
-        font-size: 100%;
-        font-weight: 900;
-        padding: 10px 20px;
-        margin-top: 15px;
-        display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    .btn-1 {
-        background-color: darkorange;
-        margin-right: 30px;
-    }
-
-    .btn-2 {
-        background-color: none;
-
-    }
-
-    .btn-1:hover,
-    .btn-2:hover {
-        background-color: rgb(220, 122, 2);
-    }
+    text-align: left;
+    max-width: 90%;
 }
 
+.btn {
+    color: #fff;
+    border: 3px solid darkorange;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 10px 20px;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-1 {
+    background-color: darkorange;
+    margin-right: 20px;
+}
+
+.btn-2 {
+    background-color: transparent;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    background-color: rgb(220, 122, 2);
+}
+
+/* Features Section */
 .features {
     padding: 30px;
+}
 
-    .features-head {
-        h1 {
-            text-align: center;
-            margin: 30px 0;
-            padding: 10px 0;
-            text-transform: uppercase;
-        }
+.features-head h1 {
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
 
-        h1:after {
-            content: " ";
-            border-bottom: 5px solid orange;
-            display: block;
-            padding: 20px 0;
-            margin: 0 auto;
-            width: 150px;
-        }
+.features-head h1::after {
+    content: "";
+    border-bottom: 5px solid orange;
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+}
 
-        p {
-            text-align: center;
-            margin: 0 190px;
-            margin-bottom: 30px;
-            font-size: 20px;
-        }
+.features-head p {
+    text-align: center;
+    margin: 0 auto 50px;
+    font-size: 20px;
+    max-width: 800px;
+}
+
+.features-card ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+    padding: 0;
+}
+
+.features-card li {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.features-card ion-icon {
+    color: darkorange;
+    font-size: 80px;
+}
+
+.features-card h3 {
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.features-card p {
+    line-height: 150%;
+    font-size: 16px;
+}
+
+.fav-meals {
+    margin-top: 40px;
+}
+
+.fav-meals .meals-img-1,
+.meals-img-2 {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fav-meals .meals-img-1 div,
+.fav-meals .meals-img-2 div {
+    width: 25%;
+    background-color: #000;
+    transform: scale(1.15);
+    overflow: hidden;
+}
+
+.fav-meals .meals-img-1 div img,
+.fav-meals .meals-img-2 div img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    opacity: 0.7;
+}
+
+.fav-meals .meals-img-1 div img:hover,
+.fav-meals .meals-img-2 div img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row-links {
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 20px;
     }
 
-    .features-card {
-        ul {
-            display: flex;
-            margin: 2px 60px;
-            list-style-type: none;
-        }
+    .hero-banner h1 {
+        font-size: 1.5rem;
+    }
 
-        ul li {
-            margin: 30px;
+    .btn {
+        display: block;
+        margin: 10px auto;
+    }
 
-            ion-icon {
-                color: darkorange;
-                font-size: 80px;
-            }
+    .features-card ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-            h3 {
-                padding: 10px 0;
-                text-transform: uppercase;
-            }
+    .fav-meals .meals-img-1,
+    .meals-img-2 {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
-            p {
-                line-height: 150%;
-                font-size: 20px;
-            }
-        }
+    .fav-meals .meals-img-1 div,
+    .fav-meals .meals-img-2 div {
+        width: 100%;
+        background-color: #000;
+        transform: scale(1);
+    }
+
+    .fav-meals .meals-img-1 div img,
+    .fav-meals .meals-img-2 div img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+        opacity: 0.7;
     }
 }
