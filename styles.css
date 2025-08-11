@@ -197,16 +197,16 @@ nav .row {
 }
 
 /* How It Works Section */
-.how-it-works{
+.how-it-works {
     margin-top: 70px;
 }
 
-.how-it-works .hiw-head{
+.how-it-works .hiw-head {
     text-transform: uppercase;
     text-align: center;
 }
 
-.how-it-works .hiw-head::after{
+.how-it-works .hiw-head::after {
     content: " ";
     border-bottom: 5px solid orange;
     display: block;
@@ -220,7 +220,7 @@ nav .row {
     justify-content: space-evenly;
 }
 
-.how-it-works .hiw-content .hiw-img{
+.how-it-works .hiw-content .hiw-img {
     width: 50%;
     text-align: center;
 }
@@ -244,15 +244,144 @@ nav .row {
     text-align: center;
 }
 
-.hiw-content .hiw-text .download-img{
+.hiw-content .hiw-text .download-img {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .hiw-content .hiw-text .download-img .play-img {
     margin-right: 30px;
 }
 
+/* Locations Section */
+.locations .locations-head {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.locations .locations-head::after {
+    content: " ";
+    border-bottom: 5px solid orange;
+    display: block;
+    width: 150px;
+    margin: 20px auto 0;
+}
+
+.locations .location-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.locations .location-container .location-city {
+    width: 300px;
+}
+
+.locations .location-container .location-city figure {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.locations .location-container .location-city figure img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.locations .location-container .location-city figure img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease-in-out;
+}
+
+.locations .location-container .location-city figure h3 {
+    text-transform: uppercase;
+}
+
+.locations .location-container .location-city .location-info figure {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.locations .location-container .location-city .location-info ion-icon {
+    color: orange;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.locations .location-container .location-city .location-info figure .social-link a{
+    color: darkorange;
+}
+
+/* Testimonials Section */
+
+.testimonials .testimonial-outer-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('Resources/Images/testimonial-bg-img.jpg');
+    width: 100vw;
+    height: 90vh;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.testimonials .testimonial-outer-bg .testimonial-head {
+    padding: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.testimonials .testimonial-outer-bg .testimonial-head::after {
+    content: " ";
+    border-bottom: 5px solid orange;
+    display: block;
+    width: 150px;
+    margin: 20px auto 0;
+}
+
+.testimonials .testimonial-outer-bg .testimonial-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user-testimonial {
+    padding: 15px;
+    width: 400px;
+    font-style: italic;
+}
+
+.user-testimonial div {
+    height: 370px;
+}
+
+.user-testimonial div h2 {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.user-testimonial div > p {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.user-testimonial figure {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.user-testimonial figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -299,5 +428,31 @@ nav .row {
         object-fit: cover;
         height: 300px;
         opacity: 0.7;
+    }
+
+    .how-it-works .hiw-content {
+        margin: 30px;
+        display: block;
+    }
+
+    .how-it-works .hiw-content .hiw-img {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    .hiw-content .hiw-text .work-step {
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .hiw-content .hiw-text .download-img {
+        display: block;
+        text-align: center;
+    }
+
+    .hiw-content .hiw-text .download-img .play-img {
+        margin: 0 auto 15px;
     }
 }
