@@ -473,6 +473,12 @@ nav .row {
     color: darkorange;
 }
 
+.subs-btn:hover,
+.subs-btn-fill:hover {
+    background-color: rgb(220, 122, 2);
+    color: #fff;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .row-links {
