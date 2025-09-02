@@ -13,6 +13,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+    <!-- <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> -->
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Ionic Icons package -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="bower_components/aos/dist/aos.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
 
     <title>The Hunger Killer</title>
 </head>
@@ -24,20 +34,20 @@
                 <img class="logo" src="Resources/Logos/Logo.jpg" alt="logo-img">
                 <div class="row-links">
                     <a href="#">Home</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Subscriptions</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#subscriptions">Subscriptions</a>
+                    <a href="#locations">Locations</a>
+                    <a href="#contactUs">Contact Us</a>
                 </div>
             </div>
         </nav>
-        <div class="hero-banner">
+        <div class="hero-banner" data-aos="fade-up" data-aos-delay="500">
             <h1>EAT HEALTHY! STAY HEALTHY!</h1>
-            <a href="#" class="btn btn-1">I'm Hungry</a>
-            <a href="#" class="btn btn-2">Show More</a>
+            <a href="#subscriptions" class="btn btn-1">I'm Hungry</a>
+            <a href="#features" class="btn btn-2">Show More</a>
         </div>
     </header>
 
-    <section class="features">
+    <section id="features" data-aos="fade-up" data-aos-duration="4000">
         <div class="features-head">
             <h1>Taste it like you never before !</h1>
             <p>The Hunger Killer, a platform where you will find some healthy and delicious eatables with proper hygiene
@@ -77,7 +87,7 @@
         </div>
     </section>
 
-    <section class="fav-meals">
+    <section id="fav-meals" data-aos="fade-up" data-aos-duration="4000">
         <div class="meals-img-1">
             <div>
                 <img src="Resources/Images/1.jpg" alt="">
@@ -108,13 +118,13 @@
         </div>
     </section>
 
-    <section class="how-it-works">
+    <section id="how-it-works" data-aos="fade-up" data-aos-duration="4000">
         <div class="hiw-head">
             <h1>How it works? &mdash; Just 3 simple steps</h1>
         </div>
 
         <div class="hiw-content">
-            <div class="hiw-img">
+            <div class="hiw-img" data-aos="slide-right" data-aos-duration="1500">
                 <img src="Resources/Images/phone-food-img.png" width="300px" height="600px" alt="phone-img">
             </div>
             <div class="hiw-text">
@@ -140,14 +150,14 @@
         </div>
     </section>
 
-    <section class="locations">
+    <section id="locations" data-aos="fade-up" data-aos-duration="4000">
         <div class="locations-head">
             <h1>We are currently in these cities</h1>
         </div>
 
         <div class="location-container">
             <div class="location-city">
-                <figure>
+                <figure data-aos="zoom-in-down" data-aos-duration="500">
                     <img src="Resources/Images/lucknow-img.jpeg" alt="lucknow-img">
                     <h3>Lucknow</h3>
                 </figure>
@@ -168,7 +178,7 @@
             </div>
 
             <div class="location-city">
-                <figure>
+                <figure data-aos="zoom-in-down" data-aos-duration="500">
                     <img src="Resources/Images/delhi-img.webp" alt="delhi-img">
                     <h3>Delhi</h3>
                 </figure>
@@ -189,7 +199,7 @@
             </div>
 
             <div class="location-city">
-                <figure>
+                <figure data-aos="zoom-in-down" data-aos-duration="500">
                     <img src="Resources/Images/mumbai-img.jpg" alt="mumbai-img">
                     <h3>Mumbai</h3>
                 </figure>
@@ -210,7 +220,7 @@
             </div>
 
             <div class="location-city">
-                <figure>
+                <figure data-aos="zoom-in-down" data-aos-duration="500">
                     <img src="Resources/Images/jaipur-img.jpeg" alt="jaipur-img">
                     <h3>Jaipur</h3>
                 </figure>
@@ -232,7 +242,7 @@
         </div>
     </section>
 
-    <section class="testimonials">
+    <section id="testimonials" data-aos="fade-up" data-aos-duration="4000">
         <div class="testimonial-outer-bg">
             <div class="testimonial-head">
                 <h1>Our customers rely on us every day</h1>
@@ -280,14 +290,14 @@
         </div>
     </section>
 
-    <section class="subscriptions">
+    <section id="subscriptions" data-aos="fade-up" data-aos-duration="4000">
         <div class="subs-head">
             <h1>Kickstart your path to healthier eating</h1>
         </div>
 
         <div class="subs-content">
             <div class="subs-card">
-                <div class="card-section1">
+                <div class="card-section1" data-aos="zoom-in" data-aos-delay="300">
                     <h3>PREMIUM</h3>
                     <p class="price">Rs.7999 <span>/ month</span></p>
                     <p class="price-text">Just Rs.266.63 per meal</p>
@@ -345,9 +355,95 @@
         </div>
     </section>
 
-    <!-- Ionic Icons package -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <section id="contactUs" data-aos="fade-up" data-aos-duration="4000">
+        <div class="contactUs-head">
+            <h1>We love to hear from you</h1>
+        </div>
+
+        <form action="#">
+            <div class="contactUs-form">
+                <div class="formSection">
+
+                    <div class="row">
+                        <div class="label">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="name" id="name" placeholder="Your name" size="50">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" id="email" placeholder="Your email" size="50">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label">
+                            <label for="findUs">How did you find us?</label>
+                        </div>
+                        <div class="field">
+                            <select name="findUs" id="findUs">
+                                <option value="friends" selected>Friends</option>
+                                <option value="siblings">Siblings</option>
+                                <option value="relatives">Relatives</option>
+                                <option value="colleagues">Colleagues</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label">
+                            <label for="newsletter">Newsletter?</label>
+                        </div>
+                        <div class="field-check">
+                            <input type="checkbox" name="newsletter" id="newsletter" checked>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label">
+                            <label for="feedback">Feedback</label>
+                        </div>
+                        <div class="field">
+                            <textarea name="feedback" id="feedback" rows="20" cols="70"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="sbmt-button">
+                        <button class="btn btn-1 sbmt">Send Us</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="firstHalf">
+            <ul class="links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Android App</a></li>
+                <li><a href="#">IOS App</a></li>
+            </ul>
+
+            <ul class="icons">
+                <li><ion-icon name="logo-google"></ion-icon></li>
+                <li><ion-icon name="logo-instagram"></ion-icon></li>
+                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                <li><ion-icon name="logo-twitter"></ion-icon></li>
+            </ul>
+        </div>
+
+        <div class="secondHalf">
+            <p>Copyright &copy; 2012 by The Hunger Killer. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

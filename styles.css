@@ -105,7 +105,7 @@ nav .row {
 
 /* Features Section */
 
-.features {
+#features {
     padding: 30px;
 }
 
@@ -162,11 +162,11 @@ nav .row {
 
 /* Favourite Meals Section */
 
-.fav-meals {
+#fav-meals {
     margin-top: 40px;
 }
 
-.fav-meals .meals-img-1,
+#fav-meals .meals-img-1,
 .meals-img-2 {
     width: 100%;
     max-width: 100%;
@@ -175,24 +175,24 @@ nav .row {
     flex-wrap: wrap;
 }
 
-.fav-meals .meals-img-1 div,
-.fav-meals .meals-img-2 div {
+#fav-meals .meals-img-1 div,
+#fav-meals .meals-img-2 div {
     width: 25%;
     background-color: #000;
     transform: scale(1.15);
     overflow: hidden;
 }
 
-.fav-meals .meals-img-1 div img,
-.fav-meals .meals-img-2 div img {
+#fav-meals .meals-img-1 div img,
+#fav-meals .meals-img-2 div img {
     width: 100%;
     object-fit: cover;
     height: 300px;
     opacity: 0.7;
 }
 
-.fav-meals .meals-img-1 div img:hover,
-.fav-meals .meals-img-2 div img:hover {
+#fav-meals .meals-img-1 div img:hover,
+#fav-meals .meals-img-2 div img:hover {
     opacity: 1;
     transform: scale(1.05);
     transition: 0.5s ease-in-out;
@@ -200,16 +200,16 @@ nav .row {
 
 /* How It Works Section */
 
-.how-it-works {
+#how-it-works {
     margin-top: 70px;
 }
 
-.how-it-works .hiw-head {
+#how-it-works .hiw-head {
     text-transform: uppercase;
     text-align: center;
 }
 
-.how-it-works .hiw-head::after {
+#how-it-works .hiw-head::after {
     content: " ";
     border-bottom: 5px solid orange;
     display: block;
@@ -217,13 +217,13 @@ nav .row {
     margin: 20px auto 0;
 }
 
-.how-it-works .hiw-content {
+#how-it-works .hiw-content {
     margin: 100px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.how-it-works .hiw-content .hiw-img {
+#how-it-works .hiw-content .hiw-img {
     width: 50%;
     text-align: center;
 }
@@ -259,13 +259,13 @@ nav .row {
 
 /* Locations Section */
 
-.locations .locations-head {
+#locations .locations-head {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
 }
 
-.locations .locations-head::after {
+#locations .locations-head::after {
     content: " ";
     border-bottom: 5px solid orange;
     display: block;
@@ -273,22 +273,22 @@ nav .row {
     margin: 20px auto 0;
 }
 
-.locations .location-container {
+#locations .location-container {
     display: flex;
     justify-content: space-evenly;
 }
 
-.locations .location-container .location-city {
+#locations .location-container .location-city {
     width: 300px;
 }
 
-.locations .location-container .location-city figure {
+#locations .location-container .location-city figure {
     box-sizing: border-box;
     display: inline-block;
     margin-bottom: 15px;
 }
 
-.locations .location-container .location-city figure img {
+#locations .location-container .location-city figure img {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -297,35 +297,35 @@ nav .row {
     cursor: pointer;
 }
 
-.locations .location-container .location-city figure img:hover {
+#locations .location-container .location-city figure img:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     transition: 0.5s ease-in-out;
 }
 
-.locations .location-container .location-city figure h3 {
+#locations .location-container .location-city figure h3 {
     text-transform: uppercase;
 }
 
-.locations .location-container .location-city .location-info figure {
+#locations .location-container .location-city .location-info figure {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 30px;
 }
 
-.locations .location-container .location-city .location-info ion-icon {
+#locations .location-container .location-city .location-info ion-icon {
     color: orange;
     margin-right: 10px;
     font-size: 25px;
 }
 
-.locations .location-container .location-city .location-info figure .social-link a {
+#locations .location-container .location-city .location-info figure .social-link a {
     color: darkorange;
 }
 
 /* Testimonials Section */
 
-.testimonials .testimonial-outer-bg {
+#testimonials .testimonial-outer-bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('Resources/Images/testimonial-bg-img.jpg');
     width: 100vw;
     height: 90vh;
@@ -333,13 +333,13 @@ nav .row {
     color: #fff;
 }
 
-.testimonials .testimonial-outer-bg .testimonial-head {
+#testimonials .testimonial-outer-bg .testimonial-head {
     padding: 50px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.testimonials .testimonial-outer-bg .testimonial-head::after {
+#testimonials .testimonial-outer-bg .testimonial-head::after {
     content: " ";
     border-bottom: 5px solid orange;
     display: block;
@@ -347,7 +347,7 @@ nav .row {
     margin: 20px auto 0;
 }
 
-.testimonials .testimonial-outer-bg .testimonial-content {
+#testimonials .testimonial-outer-bg .testimonial-content {
     display: flex;
     justify-content: space-evenly;
 }
@@ -389,17 +389,17 @@ nav .row {
 
 /* Subscription Section */
 
-.subscriptions {
+#subscriptions {
     padding: 15px;
 }
 
-.subscriptions .subs-head {
+#subscriptions .subs-head {
     padding: 50px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.subscriptions .subs-head::after {
+#subscriptions .subs-head::after {
     content: " ";
     border-bottom: 5px solid orange;
     display: block;
@@ -479,8 +479,121 @@ nav .row {
     color: #fff;
 }
 
+/* Contact Us Section */
+
+#contactUs {
+    padding: 15px;
+}
+
+#contactUs .contactUs-head {
+    margin: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contactUs .contactUs-head::after {
+    content: " ";
+    border-bottom: 5px solid orange;
+    display: block;
+    width: 150px;
+    margin: 20px auto 0;
+}
+
+.contactUs-form {
+    display: flex;
+    justify-content: center;
+}
+
+.formSection {
+    max-width: 1000px;
+    width: 900px;
+}
+
+.formSection .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.formSection .row .label {
+    font-size: 20px;
+    width: 300px;
+}
+
+.formSection .row .field,
+.field-check {
+    text-align: left;
+    width: 600px;
+}
+
+.formSection .row .field input,
+textarea {
+    width: 100%;
+}
+
+.formSection .row .field input,
+select {
+    width: 100%;
+    padding: 5px;
+}
+
+.sbmt-button {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.sbmt-button .sbmt,
+select {
+    cursor: pointer;
+}
+
+/* Footer Section */
+
+footer {
+    margin-top: 50px;
+    background-color: #333;
+}
+
+footer .firstHalf {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+.firstHalf .links,
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.firstHalf .links a {
+    color: rgba(245, 245, 245, 0.557);
+    text-decoration: none;
+    padding: 15px;
+}
+
+.firstHalf .icons ion-icon {
+    padding: 25px;
+    cursor: pointer;
+}
+
+.secondHalf {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.secondHalf p {
+    color: rgba(245, 245, 245, 0.557);
+}
+
 /* Responsive */
-@media (max-width: 768px) {
+
+@media (max-width: 480px) {
     .row-links {
         justify-content: center;
         gap: 2rem;
@@ -501,7 +614,7 @@ nav .row {
         align-items: center;
     }
 
-    .fav-meals .meals-img-1,
+    #fav-meals .meals-img-1,
     .meals-img-2 {
         width: 100%;
         max-width: 100%;
@@ -511,27 +624,27 @@ nav .row {
         flex-direction: column;
     }
 
-    .fav-meals .meals-img-1 div,
-    .fav-meals .meals-img-2 div {
+    #fav-meals .meals-img-1 div,
+    #fav-meals .meals-img-2 div {
         width: 100%;
         background-color: #000;
         transform: scale(1);
     }
 
-    .fav-meals .meals-img-1 div img,
-    .fav-meals .meals-img-2 div img {
+    #fav-meals .meals-img-1 div img,
+    #fav-meals .meals-img-2 div img {
         width: 100%;
         object-fit: cover;
         height: 300px;
         opacity: 0.7;
     }
 
-    .how-it-works .hiw-content {
+    #how-it-works .hiw-content {
         margin: 30px;
         display: block;
     }
 
-    .how-it-works .hiw-content .hiw-img {
+    #how-it-works .hiw-content .hiw-img {
         width: auto;
         margin-bottom: 15px;
     }
@@ -552,13 +665,19 @@ nav .row {
         margin: 0 auto 15px;
     }
 
-    .locations .location-container {
+    #locations .locations-head {
+        text-transform: uppercase;
+        text-align: center;
+        margin: 50px;
+    }
+
+    #locations .location-container {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
 
-    .testimonials .testimonial-outer-bg {
+    #testimonials .testimonial-outer-bg {
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('Resources/Images/testimonial-bg-img.jpg');
         width: 100vw;
         height: auto;
@@ -566,7 +685,7 @@ nav .row {
         color: #fff;
     }
 
-    .testimonials .testimonial-outer-bg .testimonial-content {
+    #testimonials .testimonial-outer-bg .testimonial-content {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -610,6 +729,165 @@ nav .row {
         padding: 10px 30px;
         margin: 0;
         color: darkorange;
+    }
+
+    #contactUs .contactUs-head {
+        margin: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .formSection {
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    footer .firstHalf {
+        display: block;
+        padding: 40px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .row-links {
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 20px;
+    }
+
+    .hero-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .features-card ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fav-meals .meals-img-1,
+    .meals-img-2 {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #fav-meals .meals-img-1 div,
+    #fav-meals .meals-img-2 div {
+        width: 100%;
+        background-color: #000;
+        transform: scale(1);
+    }
+
+    #fav-meals .meals-img-1 div img,
+    #fav-meals .meals-img-2 div img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+        opacity: 0.7;
+    }
+
+    #how-it-works .hiw-content {
+        margin: 30px;
+        display: block;
+    }
+
+    #how-it-works .hiw-content .hiw-img {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    .hiw-content .hiw-text .work-step {
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .hiw-content .hiw-text .download-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #locations .location-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #testimonials .testimonial-outer-bg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('Resources/Images/testimonial-bg-img.jpg');
+        width: 100vw;
+        height: auto;
+        margin-top: 20px;
+        color: #fff;
+    }
+
+    #testimonials .testimonial-outer-bg .testimonial-content {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .user-testimonial div {
+        height: fit-content;
+    }
+
+    .user-testimonial figure {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        gap: 10px;
+    }
+
+    .subs-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .subs-content .subs-card {
+        height: auto;
+    }
+
+    .card-section3 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .card-section3 .subs-btn {
+        padding: 10px 30px;
+        margin: 0;
+    }
+
+    .card-section3 .subs-btn-fill {
+        padding: 10px 30px;
+        margin: 0;
+        color: darkorange;
+    }
+
+    #contactUs .contactUs-head {
+        padding: 25px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .formSection .row .field,
+    .field-check {
+        text-align: left;
+        width: 100%;
     }
 
 }
