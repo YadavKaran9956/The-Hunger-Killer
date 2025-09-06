@@ -595,9 +595,10 @@ footer .firstHalf {
 
 @media (max-width: 480px) {
     .row-links {
-        justify-content: center;
+        /* justify-content: center;
         gap: 2rem;
-        margin-top: 20px;
+        margin-top: 20px; */
+        display: none;
     }
 
     .hero-banner h1 {
@@ -747,6 +748,15 @@ footer .firstHalf {
         padding: 40px;
     }
 
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+     .row-links {
+        /* justify-content: center;
+        gap: 2rem;
+        margin-top: 20px; */
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
